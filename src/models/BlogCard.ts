@@ -3,4 +3,5 @@ export default interface BlogCard {
   image: string;
   title: string;
   shortDescription: string;
+  date: string;
 }

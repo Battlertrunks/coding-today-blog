@@ -1,0 +1,10 @@
+.App .ContainerBlogsRoute {
+  z-index: 0;
+}
+
+.App .background-design {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+}

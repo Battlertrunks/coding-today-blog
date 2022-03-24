@@ -8,34 +8,40 @@ const ContainerBlogsRoute = () => {
     {
       id: 1,
       image:
-        "https://cdn.britannica.com/13/197813-138-3CF1CCFA/state-more-president-Washington-economy-geography-history.jpg?w=800&h=450&c=crop",
+        "https://i2.wp.com/www.additudemag.com/wp-content/uploads/2021/02/GettyImages-1152213834-e1613572994221.jpg?resize=1280%2C720px&ssl=1",
       title: "What is burn out?",
       shortDescription:
         "We discuss what is burn out and why it affects develops so much.",
+      date: "March 23, 2022",
     },
     {
       id: 2,
       image:
-        "https://images.contentstack.io/v3/assets/blt00454ccee8f8fe6b/blt2789394e56621356/605c0f59c4f5970f345859e2/US_Colorado_US_Header.jpg?width=1680&auto=webp",
+        "https://www.freecodecamp.org/news/content/images/size/w2000/2019/10/react-vs-angular.png",
       title: "React or Angular? What to use",
       shortDescription:
         "In this blog we talk about what makes Angular and React unique, and which one suits you!",
+      date: "March 20, 2022",
     },
     {
       id: 3,
-      image: "https://code.org/shared/images/social-media/hoc_cse_social.png",
+      image:
+        "https://cdn.thenewstack.io/media/2022/01/10b88c68-typescript-logo.png",
       title: "Starting out in TypeScript - Coming from JavaScript",
       shortDescription:
         "Is this your first time in TypeScript? This is the starting guide on how TypeScript works and where to start learning.",
+      date: "March 15, 2022",
     },
   ]);
 
   return (
-    <ul className={classes["column-layout"]}>
-      {blogs.map((item) => (
-        <BlogCardContainer singleCard={item} />
-      ))}
-    </ul>
+    <div className={classes["column-layout"]}>
+      <ul>
+        {blogs.map((item) => (
+          <BlogCardContainer singleCard={item} />
+        ))}
+      </ul>
+    </div>
   );
 };
 

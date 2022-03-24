@@ -13,6 +13,7 @@ const BlogCardContainer = ({ singleCard }: Props) => {
       <h2>{singleCard?.title}</h2>
       <div className="divider" />
       <p>{singleCard?.shortDescription}</p>
+      <p className="date">- {singleCard?.date}</p>
     </li>
   );
 };

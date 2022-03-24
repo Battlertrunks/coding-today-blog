@@ -1,4 +1,11 @@
 .column-layout {
+  display: flex;
+  justify-content: center;
+}
+
+.column-layout ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  margin-top: 200px;
 }
