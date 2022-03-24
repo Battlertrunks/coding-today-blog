@@ -1,6 +1,6 @@
-import classes from "./BlogCardContainer.module.css";
-import { tempData } from "../dummy-data/temp-data";
 import BlogCard from "../models/BlogCard";
+
+import "./BlogCardContainer.css";
 
 interface Props {
   singleCard: BlogCard;
@@ -9,7 +9,9 @@ interface Props {
 const BlogCardContainer = ({ singleCard }: Props) => {
   return (
     <li className="BlogCardContainer">
+      <img src={singleCard?.image} alt="" />
       <h2>{singleCard?.title}</h2>
+      <div className="divider" />
       <p>{singleCard?.shortDescription}</p>
     </li>
   );
