@@ -5,6 +5,8 @@
   display: flex;
   justify-content: space-between;
   box-shadow: 0 -2px 5px #29292928;
+  bottom: 0;
+  z-index: 1;
 }
 
 .Footer p {

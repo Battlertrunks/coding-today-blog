@@ -1,5 +1,5 @@
-export default interface BlogCard {
-  id?: number;
+export default interface Article {
+  _id?: string;
   image: string;
   title: string;
   shortDescription: string;

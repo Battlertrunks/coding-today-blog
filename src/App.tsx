@@ -5,20 +5,27 @@ import Header from "./components/Header";
 import ContainerBlogsRoute from "./components/ContainerBlogsRoute";
 import background from "./img/background.svg";
 
+import {
+  BrowserRouter as Router,
+  Navigate,
+  Route,
+  Routes,
+} from "react-router-dom";
+
 import Footer from "./components/Footer";
+import BlogArticleRoute from "./components/BlogArticleRoute";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <ContainerBlogsRoute />
-
-      <Footer />
-      <img
-        className="background-design"
-        src={background}
-        alt="background design"
-      />
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<ContainerBlogsRoute />} />
+          <Route path="/article/:id" element={<BlogArticleRoute />} />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 }
